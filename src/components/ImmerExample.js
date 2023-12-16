@@ -14,15 +14,24 @@ const ImmerExample = () => {
     updatePerson(draft=>{
         draft.name=e.target.value
     })
+    
 
    }
+   const handleTitleChanage=(e)=>{
+    updatePerson(draft=>{
+        draft.artwork.title=e.target.value;
+    })
+}
   return (
     <div>
         <label>Name:</label>
 <input type="text"
 value={person.name}
 onChange={handleNameChanage}/>
-<p></p>
+<label>Title:</label>
+<input type="text"
+value={person.artwork.title}
+onChange={handleTitleChanage}/>
 
     </div>
   )
