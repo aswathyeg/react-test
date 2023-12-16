@@ -1,11 +1,11 @@
 
 import './App.css';
-import Signal from './components/Signal';
+import ImmerExample from './components/ImmerExample';
 
 function App() {
   return (
     <div className="App">
-    <Signal/>
+    <ImmerExample/>
     </div>
   );
 }
