@@ -1,5 +1,6 @@
 import React from 'react'
 import { useImmer } from 'use-immer';
+//no need of code repetation like spreadoperator[...person]
 const ImmerExample = () => {
     const [person,updatePerson]=useImmer({
         name: 'Niki de Saint Phalle',
