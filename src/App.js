@@ -1,11 +1,11 @@
 
 import './App.css';
-import Remove from './components/Arrays/Remove';
+import Insertion from './components/Arrays/Insertion';
 
 function App() {
   return (
     <div className="App">
-    <Remove/>
+    <Insertion/>
     </div>
   );
 }
