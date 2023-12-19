@@ -1,11 +1,11 @@
 
 import './App.css';
-import ImmerExample from './components/ImmerExample';
+import Remove from './components/Arrays/Remove';
 
 function App() {
   return (
     <div className="App">
-    <ImmerExample/>
+    <Remove/>
     </div>
   );
 }
