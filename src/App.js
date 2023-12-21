@@ -1,11 +1,11 @@
 
 import './App.css';
-import Insertion from './components/Arrays/Insertion';
+import Reverse from './components/Arrays/Reverse';
 
 function App() {
   return (
     <div className="App">
-    <Insertion/>
+    <Reverse/>
     </div>
   );
 }
