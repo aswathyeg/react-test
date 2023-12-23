@@ -1,11 +1,11 @@
 
 import './App.css';
-import Reverse from './components/Arrays/Reverse';
+import NonMutation from './components/Arrays/NonMutation';
 
 function App() {
   return (
     <div className="App">
-    <Reverse/>
+    <NonMutation/>
     </div>
   );
 }
