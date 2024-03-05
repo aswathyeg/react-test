@@ -1,22 +1,33 @@
+import Section from './components/context/withoutContext/Section.js';
 
-import './App.css';
-import Headings from './components/context/withoutContext/Headings';
-import Section from './components/context/withoutContext/Section';
+import Heading from './components/context/withoutContext/Heading.js';
 
+export default function App() {
+  //Let’s say you want multiple headings within the same Section to always have the same size:
+  //Currently, you pass the level prop to each <Heading> separately:
+  //It would be nice if you could pass the level prop to the <Section> component instead and remove it from the <Heading>.
+  // This way you could enforce that all headings in the same section have the same size:
 
-function App() {
+//But how can the <Heading> component know the level of its closest <Section>? 
+//That would require some way for a child to “ask” for data from somewhere above in the tree.
   return (
- 
-<Section>
-  <Headings level={1}>Title</Headings>
-  <Headings level={2}>Heading</Headings>
-  <Headings level={3}>Sub-heading</Headings>
-  <Headings level={4}>Sub-sub-heading</Headings>
-  <Headings level={5}>Sub-sub-sub-heading</Headings>
-  <Headings level={6}>Sub-sub-sub-sub-heading</Headings>
-</Section>
-  
+    <Section>
+      <Heading level={1}>Title</Heading>
+      <Section>
+        <Heading level={2}>Heading</Heading>
+        <Heading level={2}>Heading</Heading>
+        <Heading level={2}>Heading</Heading>
+        <Section>
+          <Heading level={3}>Sub-heading</Heading>
+          <Heading level={3}>Sub-heading</Heading>
+          <Heading level={3}>Sub-heading</Heading>
+          <Section>
+            <Heading level={4}>Sub-sub-heading</Heading>
+            <Heading level={4}>Sub-sub-heading</Heading>
+            <Heading level={4}>Sub-sub-heading</Heading>
+          </Section>
+        </Section>
+      </Section>
+    </Section>
   );
 }
-
-export default App;
