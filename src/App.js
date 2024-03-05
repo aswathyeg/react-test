@@ -6,16 +6,16 @@ import Section from './components/context/withoutContext/Section';
 
 function App() {
   return (
-   <div>
+ 
 <Section>
-  <Headings level={1}></Headings>
-  <Headings level={2}></Headings>
-  <Headings level={3}></Headings>
-  <Headings level={4}></Headings>
-  <Headings level={5}></Headings>
-  <Headings level={6}></Headings>
+  <Headings level={1}>Title</Headings>
+  <Headings level={2}>Heading</Headings>
+  <Headings level={3}>Sub-heading</Headings>
+  <Headings level={4}>Sub-sub-heading</Headings>
+  <Headings level={5}>Sub-sub-sub-heading</Headings>
+  <Headings level={6}>Sub-sub-sub-sub-heading</Headings>
 </Section>
-   </div>
+  
   );
 }
 
