@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Headings = () => {
+const Headings = ({level}) => {
   return (
     <div>Headings</div>
   )
