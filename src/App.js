@@ -10,6 +10,7 @@ export default function App() {
 
 //But how can the <Heading> component know the level of its closest <Section>? 
 //That would require some way for a child to “ask” for data from somewhere above in the tree.
+//solution:context
   return (
     <Section>
       <Heading level={1}>Title</Heading>
