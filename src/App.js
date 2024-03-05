@@ -1,12 +1,21 @@
 
 import './App.css';
-import NonMutation from './components/Arrays/NonMutation';
+import Headings from './components/context/withoutContext/Headings';
+import Section from './components/context/withoutContext/Section';
+
 
 function App() {
   return (
-    <div className="App">
-    <NonMutation/>
-    </div>
+   <div>
+<Section>
+  <Headings level={1}></Headings>
+  <Headings level={2}></Headings>
+  <Headings level={3}></Headings>
+  <Headings level={4}></Headings>
+  <Headings level={5}></Headings>
+  <Headings level={6}></Headings>
+</Section>
+   </div>
   );
 }
 
